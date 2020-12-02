@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Nairacheck.com</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {% load staticfiles %}
+  <!-- <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet"> -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+
+  <!-- bootstrap js-->
+  <!-- <script src="movies/bootstrap/js/bootstrap.js"></script> -->
+
+  <style>
+    body {
+      font-size: 100%;
+    }
+    .nav2{
+      z-index:10;
+    }
+
+    .video_frame{
+       margin-top: -5% !important;
+       z-index:-5;
+       height:60vh;
+     }
+
+    textarea {
+      resize: none;
+    }
+    
+
+    .page-item {
+      padding: 0px;
+      font-size: 90%;
+    }
+
+    .powered span a:hover {
+      color: skyblue !important;
+    }
+
+    @media screen and (max-width:425px) {
+      body {
+        font-size: 90% !important;
+      }
+
+    
+      .disclaimer {
+        font-size: 0.623rem;
+      }
+
+      .powered {
+        text-align: center !important;
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-0">
+    <a class="navbar-brand ml-sm-4 font-weight-bold text-uppercase" href="#">DBSAM </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mx-sm-3 active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item mx-sm-3">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item mx-sm-3">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main class="container-fluid pb-5 px-0 mb-5 mt-0 pt-0">
+    <nav class="navbar navbar-expand-lg rounded-0 mt-0 pt-0 bg-transparent navbar-light nav2">
+      <div class="collapse navbar-collapse mx-auto mt-0 col-lg-9 py-2 shadow-sm" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item mx-sm-4 active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mx-sm-3 text-capitalize">
+            <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mx-sm-3 text-capitalize">
+            <a class="nav-link" href="#">Days of activities <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mx-sm-3 text-capitalize">
+            <a class="nav-link" href="#">Sermons <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mx-sm-3 text-capitalize">
+            <a class="nav-link" href="#">Gallery <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mx-sm-3 text-capitalize">
+            <a class="nav-link" href="#">Ministers <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mx-sm-3 text-capitalize">
+            <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+          </li>
+        
+        </ul>
+      </div>
+    </nav>
+    {% block content %} {% endblock %}
+  </main>
+  <div
+    class="jumbotron bg-light rounded-0 m-0 fixed-bottom col-12 p-1 d-flex flex-column justify-content-center align-items-center">
+    <div class="col-sm-12">
+      <div>
+        <p class="mb-0 text-black text-center">
+          © 2020 <span class="text-secondary">DBSAM</span>. All rights
+          reserved
+        </p>
+        <p class="mb-0 text-secondary text-sm-right powered">
+          Powered by
+          <span><a class="text-dark" target="_blank"
+              href="http://www.ParallelInfiniti.com">ParallelInfiniti.com</a></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
