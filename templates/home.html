@@ -1,11 +1,26 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <main class="container-fluid px-0">
-    <div class="jumbotron rounded-0 bg-dark mb-0 mx-0 video_frame"></div>
-    
-    <div class="jumbotron rounded-0 mx-auto p-3">
-    <i class="fab fa-user"></i>
+<main class="container-fluid px-0">
+  <div class="jumbotron rounded-0 bg-dark mb-0 mx-0 video_frame"></div>
+
+  <div class="jumbotron rounded-0 mx-auto p-3 d-flex justify-content-center align-items-center">
+    <div class="d-flex justify-content-start bg-warning mx-sm-5">
+      <i class="fab fa-user"></i>
     </div>
-  </main>
+
+    <div class="bg-warning mx-sm-5">
+      <h4 class="mb-0">Lorem ipsum dolor sit amet.</h4>
+      <span class="text-muted font-italic">Lorem ipsum dolor sit.</span>
+    </div>
+
+    <div class="bg-warning mx-sm-5 d-flex justify-content-around align-items-center">
+      <div class="jumbotron mx-sm-3 m-0 p-4 bg-dark"></div>
+      <div class="jumbotron mx-sm-3 m-0 p-4 bg-dark"></div>
+      <div class="jumbotron mx-sm-3 m-0 p-4 bg-dark"></div>
+      <div class="jumbotron mx-sm-3 m-0 p-4 bg-dark"></div>
+    </div>
+    <button class="btn btn-outline-dark text-uppercase">all events</button>
+  </div>
+</main>
 {% endblock %}
