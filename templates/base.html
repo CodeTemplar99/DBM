@@ -16,6 +16,7 @@
   <style>
     body {
       font-size: 100%;
+      overflow-x: hidden;
     }
     .nav2{
       z-index:10;
@@ -23,14 +24,23 @@
 
     .video_frame{
        margin-top: -5% !important;
-       z-index:-5;
-       height:65vh;
+       z-index:9;
+       height:73vh;
+       position: relative;
      }
      .video_frame_cover{
        height:inherit;
        background: rgba(0, 0, 0, 0.685);
+       position: absolute;
+       top: 0px;
+       display: none !important;
      }
 
+     .clip{
+       height: inherit;
+       width: 100%;
+       border:none;
+     }
     textarea {
       resize: none;
     }

@@ -3,5 +3,6 @@
     "dbsam",
     "infiniti",
     "parallel"
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }
