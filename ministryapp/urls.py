@@ -22,4 +22,7 @@ urlpatterns = [
     path('', views.home),
     path('admin/', admin.site.urls),
     path('aboutministry/', include('aboutministry.urls')),
+    path('days/', include('days.urls')),
+    path('contact/', include('contact.urls')),
+    path('announcements/', include('announcements.urls')),
 ]

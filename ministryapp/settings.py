@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'aboutministry.apps.AboutministryConfig'
+    'aboutministry.apps.AboutministryConfig',
+    'days.apps.DaysConfig',
+    'contact.apps.ContactConfig',
+    'announcements.apps.AnnouncementsConfig'
 ]
 
 MIDDLEWARE = [
