@@ -2,11 +2,13 @@
 
 {% block content %}
 <main class="container-fluid px-0">
-  <div class="jumbotron rounded-0 p-0 mb-0 mx-0 video_frame">
-    {% load staticfiles %}
-    <video class="clip" loop controls autoplay>
-      <source src="{% static 'video.mp4' %}" type="Video/Mp4">
+  <div class="rounded-0 p-0 mb-0 mx-0 video_frame">
+    {% load static %}
+    <video class="clip" loop controls>
+      <source  src="{% static 'video.mp4' %}"
+       type="video/mp4">
       </source>
+      your browser does not support video
     </video>
     <div class="d-flex justify-content-center align-items-center video_frame_cover">
       <h1 class="font-italic lead col-lg-5 col-md-8 text-white-50 text-center text-capitalize">Lorem ipsum dolor sit
