@@ -2,16 +2,9 @@
 
 {% block content %}
 <main class="container-fluid px-0">
-  <div class="rounded-0 p-0 mb-0 mx-0 video_frame">
-    {% load static %}
-    <video class="clip" loop controls>
-      <source  src="{% static 'video.mp4' %}"
-       type="video/mp4">
-      </source>
-      your browser does not support video
-    </video>
-    <div class="d-flex justify-content-center align-items-center video_frame_cover">
-      <h1 class="font-italic lead col-lg-5 col-md-8 text-white-50 text-center text-capitalize">Lorem ipsum dolor sit
+  <div class="rounded-0 bg-dark p-0 mb-0 mx-0 hero d-flex justify-content-center align-items-center">
+    <div class="d-flex justify-content-center align-items-center d-flex justify-content-center align-items-center">
+      <h1 class="font-italic lead col-lg-8 col-md-8 text-light text-center text-capitalize">Lorem ipsum dolor sit
         amet consectetur adipisicing elit. Laboriosam, voluptate. A, suscipit.</h1>
     </div>
   </div>
@@ -40,13 +33,16 @@
   </div>
 
   <div class="row justify-content-center">
-    <div class="jumbotron mx-sm-3 px-2 py-2 col-sm-3 shadow-sm d-flex flex-column justify-content-end align-items-start" style="min-height: 250px;">
+    <div class="jumbotron mx-sm-3 px-2 py-2 col-sm-3 shadow-sm d-flex flex-column justify-content-end align-items-start"
+      style="min-height: 250px;">
       <h5 class="m-0 bg-success text-white p-1 px-sm-3">Our Ministers</h5>
     </div>
-    <div class="jumbotron mx-sm-3 px-2 py-2 col-sm-3 shadow-sm d-flex flex-column justify-content-end align-items-start" style="min-height: 250px;">
+    <div class="jumbotron mx-sm-3 px-2 py-2 col-sm-3 shadow-sm d-flex flex-column justify-content-end align-items-start"
+      style="min-height: 250px;">
       <h5 class="m-0 bg-success text-white p-1 px-sm-3">Sermons</h5>
     </div>
-    <div class="jumbotron mx-sm-3 px-2 py-2 col-sm-3 shadow-sm d-flex flex-column justify-content-end align-items-start" style="min-height: 250px;">
+    <div class="jumbotron mx-sm-3 px-2 py-2 col-sm-3 shadow-sm d-flex flex-column justify-content-end align-items-start"
+      style="min-height: 250px;">
       <h5 class="m-0 bg-success text-white p-1 px-sm-3">Gallery</h5>
     </div>
 
