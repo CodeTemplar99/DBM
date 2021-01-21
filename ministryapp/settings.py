@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 'ministryapp.apps.MinistryappConfig',
     'aboutministry.apps.AboutministryConfig',
     'days.apps.DaysConfig',
     'contact.apps.ContactConfig',
