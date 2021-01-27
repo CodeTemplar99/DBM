@@ -5,8 +5,25 @@
   object-fit: fill;
 }
 
-.overlayed{
+.overlayed {
   width: 100%;
   height: inherit;
   background: #2b2a2aa6;
+}
+
+.minister-box,
+.sermon-box,
+.gallery-box {
+  background-image: url('../imgs/church-service-26109735.jpg') !important;
+  background-size: 100% 100%;
+  background-position: center;
+  object-fit: fill;
+}
+
+.sermon-box {
+  background-image: url('../imgs/father-teaches-his-little-child-to-ride-bike-autumn-park-happy-family-moments-time-together-dad-son-candid-lifestyle-image-162688503.jpg') !important;
+}
+
+.gallery-box {
+  background-image: url('../imgs/christian-people-worship-god-over-cross-christian-people-worship-god-over-cross-cloudy-sky-189646138.jpg') !important;
 }
