@@ -1,0 +1,12 @@
+.hero {
+  background-image: url('../imgs/church-service-26109735.jpg') !important;
+  background-size: 100% 100vh;
+  background-position: center;
+  object-fit: fill;
+}
+
+.overlayed{
+  width: 100%;
+  height: inherit;
+  background: #2b2a2aa6;
+}
