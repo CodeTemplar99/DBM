@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Event(models.Model):
-    Event = models.CharField(max_lenght=200)
+    Event = models.CharField(max_length=200)
     Date = models.DateField()
 
     def __str__(self):
