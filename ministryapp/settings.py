@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'aboutministry.apps.AboutministryConfig',
     'days.apps.DaysConfig',
     'contact.apps.ContactConfig',
-    'announcements.apps.AnnouncementsConfig'
+    'announcements.apps.AnnouncementsConfig',
+    'events.apps.EventsConfig'
 ]
 
 MIDDLEWARE = [
