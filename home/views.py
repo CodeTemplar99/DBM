@@ -21,3 +21,5 @@ def contact(request):
 
 def announcements(request):
     return render(request, 'announcements.html')
+
+# events

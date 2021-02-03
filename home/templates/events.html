@@ -2,4 +2,9 @@
 
 {% block content %}
 
+  {% for obj in object_list %}
+    <div>
+      <a href ={{obj.get_absolute_url}}>{{obj.name}}</a>
+    </div>
+  {% endfor %}
 {% endblock %}
