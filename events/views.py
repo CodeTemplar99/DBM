@@ -5,4 +5,5 @@ from .models import Event
 
 
 def events(request):
-    return render(request, 'events.html')
+    ob = Event.objects.get(id=1)
+    return render(request, 'events.html', {'ob': ob})
