@@ -7,3 +7,9 @@ class Event(models.Model):
     id = models.AutoField(primary_key=True)
     Event = models.CharField(blank=True, null=True, max_length=200)
     Date = models.DateTimeField()
+
+    def __str__(self):
+        return self.Event
+
+    def get_absolute_url(self):
+        return reverse("events:event-detail", kwargs={"pk": self.pk})

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% for obj in object_list %}
+    <div>
+      <a href="{{obj.get_absolute_url}}">{{obj.Event}}</a>
+    </div>
+  {% endfor %}
+<div class="jumbotron"></div>
+{% endblock content %}

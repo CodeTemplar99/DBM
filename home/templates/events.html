@@ -1,10 +1,15 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block scripts %}
+  <script src="{% static 'js/timer.js' defer %}" type="text/javascript"></script>
+{% endblock scripts %}
+
 
 {% block content %}
 
-  {% for obj in object_list %}
-    <div>
-      <a href ={{obj.get_absolute_url}}>{{obj.name}}</a>
-    </div>
-  {% endfor %}
+<div class="jumbotron">
+
+</div>
+
 {% endblock %}

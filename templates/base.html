@@ -74,7 +74,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light mb-0">
-    <a class="navbar-brand ml-sm-4 font-weight-bold text-uppercase" href="#">DBSAM </a>
+    <a class="navbar-brand ml-sm-4 font-weight-bold text-uppercase" href="{% url 'home:home' %}">DBSAM </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -96,7 +96,7 @@
       <div class="collapse navbar-collapse bg-white mx-auto mt-0 py-2 shadow-sm" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item mx-sm-4 active">
-            <a class="nav-link link1" href="#">Home <span class="sr-only">(Current)</span></a>
+            <a class="nav-link link1" href="{% url 'home:home' %}">Home <span class="sr-only">(Current)</span></a>
           </li>
           <li class="nav-item mx-sm-3 text-capitalize">
             <a class="nav-link link2" href="{% url 'aboutministry:about' %}">About Us <span class="sr-only"></span></a>
@@ -149,7 +149,8 @@
             <!-- <p>You can reach us by the numbers on our contact page or by calling 0812345677</p> -->
           </div>
           <div class="modal-footer">
-            <p class="text-danger font-weight-bold">Do all online donations through these numbers, note that our ministers will NEVER
+            <p class="text-danger font-weight-bold">Do all online donations through these numbers, note that our
+              ministers will NEVER
               call you to ask for money or ask for aid, you can report
               suspicious actions on 08123456788</p>
           </div>

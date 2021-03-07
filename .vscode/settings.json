@@ -6,6 +6,6 @@
   ],
   "liveServer.settings.port": 5502,
   "python.linting.pylintEnabled": false,
-  "python.linting.enabled": true,
+  "python.linting.enabled": false,
   "python.linting.flake8Enabled": true
 }

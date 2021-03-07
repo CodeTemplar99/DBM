@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block scripts %}
+    <script src={% static 'main.js' %} type="text/javascript" defer></script>
+{% endblock scripts %}
+
+{% block content %}
+<div class="container">
+  <div id="event-box">{{obj.Event}} will take place: {{ obj.Date|date:"M d, H:m:s"}}</div>
+  <div>Time left</div>
+  <div id="countdown-box" class="text-center mt-3 h1">
+    <div class="spinner-border" role="status"></div>
+  </div>
+</div>
+{% endblock content %}

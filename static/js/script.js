@@ -3,6 +3,7 @@
 // })
 
 let b= 0
-function showWhatsApp() {
- $('#whatsApp_account_modal').modal('show');
+function showDonate() {
+    b++
+    (b % 2 != 0) ? $('#donate_modal').modal('show') : $('#donate_modal').modal('hide');
 }
