@@ -14,6 +14,7 @@ class EventListView(ListView):
     template_name = 'events/main.html'
 
 
+
 class EventDetailView(DetailView):
     model = Event
     template_name = 'events/countdown.html'
