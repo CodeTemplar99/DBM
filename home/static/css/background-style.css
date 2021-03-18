@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('../imgs/church-service-26109735.jpg') !important;
+  background-image: url("../imgs/church-service-26109735.jpg") !important;
   background-size: 100% 100vh;
   background-position: center;
   object-fit: fill;
@@ -14,16 +14,41 @@
 .minister-box,
 .sermon-box,
 .gallery-box {
-  background-image: url('../imgs/church-service-26109735.jpg') !important;
+  background-image: url("../imgs/church-service-26109735.jpg") !important;
   background-size: 100% 100%;
   background-position: center;
   object-fit: fill;
 }
 
 .sermon-box {
-  background-image: url('../imgs/father-teaches-his-little-child-to-ride-bike-autumn-park-happy-family-moments-time-together-dad-son-candid-lifestyle-image-162688503.jpg') !important;
+  background-image: url("../imgs/father-teaches-his-little-child-to-ride-bike-autumn-park-happy-family-moments-time-together-dad-son-candid-lifestyle-image-162688503.jpg") !important;
 }
 
 .gallery-box {
-  background-image: url('../imgs/christian-people-worship-god-over-cross-christian-people-worship-god-over-cross-cloudy-sky-189646138.jpg') !important;
+  background-image: url("../imgs/christian-people-worship-god-over-cross-christian-people-worship-god-over-cross-cloudy-sky-189646138.jpg") !important;
+}
+
+.about-img-con,
+.announcements-img-con,
+.contact-img-con,
+.days-img-con {
+  background: url("../imgs/2017-05-LT-WorshipDosDonts.jpg") !important;
+  background-size: 100% 100% !important;
+  background-position: center;
+  object-fit: fill;
+}
+
+.announcements-img-con {
+  background: url("../imgs/Weekly.jpeg") !important;
+}
+
+.contact-img-con {
+  background: url("../imgs/contact-us-1.jpg") !important;
+  background-size: 100% 99% !important;
+  background-position: center;
+  object-fit: fill;
+}
+
+.days-img-con {
+  background: url("../imgs/Weekly.jpeg") !important;
 }
