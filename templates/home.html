@@ -17,6 +17,11 @@
     box-shadow: 2px 8px 20px black !important;
   }
 
+
+  .box-home{
+    display: none;
+  }
+
   @media screen and (max-width:1024px) {
     .event-block {
       flex-wrap: wrap;
@@ -114,6 +119,7 @@
       width: 85%;
       margin-bottom: 40px !important;
     }
+
   }
 </style>
 
@@ -137,32 +143,35 @@
     </div>
 
     <div class="bg-transparent mx-sm-5 p-1 detail-con">
+      <!-- {% for event in events %} -->
+      
+      <div id="event-box" class="box-home">{{ event.Date|date:"M d, Y H:m:s"}}</div>
       <h4 class="mb-0">{{event.Event}}</h4>
-      <span class="text-dark font-weight-normal fo1t-italic">12th May, 2021</span>
+      <span class="text-dark font-weight-normal fo1t-italic" >12th May, 2021</span>
     </div>
 
     <div class="bg-transparent mx-sm-5 p-1 d-flex justify-content-around align-items-center timer-con">
       <div class="jumbotron mx-sm-3 m-0 p-0 shadow-sm bg-white rounded-0">
         <div class="jumbotron p-1 m-0 rounded-0 bg-secondary">
-          <p class="font-weight-bold m-0 text-center text-white">20</p>
+          <p class="font-weight-bold m-0 text-center text-white" id="d-left-space"></p>
         </div>
         <div class="jumbotron p-0 px-1 m-0 rounded-0 bg-transparent"><span>Days</span></div>
       </div>
       <div class="jumbotron mx-sm-3 m-0 p-0 shadow-sm bg-white rounded-0">
         <div class="jumbotron p-1 m-0 rounded-0 bg-secondary">
-          <p class="font-weight-bold m-0 text-center text-white">20</p>
+          <p class="font-weight-bold m-0 text-center text-white" id="h-left-space"></p>
         </div>
         <div class="jumbotron p-0 px-1 m-0 rounded-0 bg-transparent"><span>Hours</span></div>
       </div>
       <div class="jumbotron mx-sm-3 m-0 p-0 shadow-sm bg-white rounded-0">
         <div class="jumbotron p-1 m-0 rounded-0 bg-secondary">
-          <p class="font-weight-bold m-0 text-center text-white">20</p>
+          <p class="font-weight-bold m-0 text-center text-white" id="m-left-space"></p>
         </div>
         <div class="jumbotron p-0 px-1 m-0 rounded-0 bg-transparent"><span>Mins</span></div>
       </div>
       <div class="jumbotron mx-sm-3 m-0 p-0 shadow-sm bg-white rounded-0">
         <div class="jumbotron p-1 m-0 rounded-0 bg-secondary">
-          <p class="font-weight-bold m-0 text-center text-white">20</p>
+          <p class="font-weight-bold m-0 text-center text-white"id="s-left-space" ></p>
         </div>
         <div class="jumbotron p-0 px-1 m-0 rounded-0 bg-transparent"><span>Secs</span></div>
       </div>
@@ -171,6 +180,8 @@
         <button class="btn btn-outline-dark text-uppercase">See Event
           details</button>
     </div>
+    
+    <!-- {% endfor %} -->
   </div>
 
   <div class="row justify-content-center">

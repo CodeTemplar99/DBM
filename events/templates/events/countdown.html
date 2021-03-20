@@ -4,8 +4,8 @@
 {% block content %}
 <div class="container">
   <div id="event-box">{{ event.Date|date:"M d, Y H:m:s"}}</div>
-  <div>Time left</div>
   <div>{{event.Details}}</div>
+  <div>Time left: <span id="d-left-space"></span>day(s) <span id="h-left-space"></span>hours(s) <span id="m-left-space"></span>minute(s) <span id="s-left-space"></span>seconds(s)</div>
   <div id="countdown-box" class="text-center mt-3 h1">
   </div>
 </div>
