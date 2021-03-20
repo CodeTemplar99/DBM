@@ -147,7 +147,7 @@
       
       <div id="event-box" class="box-home">{{ event.Date|date:"M d, Y H:m:s"}}</div>
       <h4 class="mb-0">{{event.Event}}</h4>
-      <span class="text-dark font-weight-normal fo1t-italic" >12th May, 2021</span>
+      <span class="text-dark font-weight-normal fo1t-italic" >{{ event.Date|date:"D d, M, Y"}}</span>
     </div>
 
     <div class="bg-transparent mx-sm-5 p-1 d-flex justify-content-around align-items-center timer-con">
