@@ -3,12 +3,14 @@
 
 {% block content %}
 <div class="container">
-  <div class="jumbotron bg-transparent border shadow-sm">
-  <h2 class="font-weight-bold mb-2 py-1 rounded-sm px-2">Programme: {{event.Event}}</h2>
-  <h3 class="px-2">Day: <Span id="event-box">{{ event.Date|date:"M d, Y H:m:s"}}</Span></h3>
-  <h4 class="px-2">Details: {{event.Details}}</h4>
-  <h5 class="px-2">Time left: <span id="d-left-space"></span> day(s): <span id="h-left-space"></span> hours(s): <span id="m-left-space"></span> minute(s): <span id="s-left-space"></span> seconds(s)</h5>
-  <div id="countdown-box" class="text-center mt-3 h1">
+  <div class="jumbotron bg-light rounded-0 p-1 cover-for-detail">
+    <div class="jumbotron bg-transparent border shadow-sm">
+    <h2 class="font-weight-bold mb-2 py-1 rounded-sm px-2">Programme: {{event.Event}}</h2>
+    <h3 class="px-2">Day: <Span id="event-box">{{ event.Date|date:"M d, Y H:m:s"}}</Span></h3>
+    <h4 class="px-2 font-weight-normal">Details: {{event.Details}}</h4>
+    <h5 class="px-2">Time left: <span id="d-left-space"></span> day(s): <span id="h-left-space"></span> hours(s): <span id="m-left-space"></span> minute(s): <span id="s-left-space"></span> seconds(s)</h5>
+    <div id="countdown-box" class="text-center mt-3 h1">
+    </div>
   </div>
 </div>
 </div>
