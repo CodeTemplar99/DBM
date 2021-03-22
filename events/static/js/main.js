@@ -30,4 +30,4 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
- 
+document.onload(typeWriter())
