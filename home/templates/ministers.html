@@ -1,92 +1,76 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
 <style>
-  .days-img-con {
-    height: 0px !important;
-    /* display: ; */
-    /* visibility: hidden; */
-    /* width: 80%; */
-  }
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-color: transparent;
+  padding: 10px;
+  grid-template-rows: auto;
+}
 
-  .about-head {
-    font-size: 150%;
-    margin-top: 30px;
-    margin-bottom: 5px;
-  }
+.grid-item {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+    cursor: pointer;
+    transition: all 0.9s;
+}
 
-  .nav-link {
-    color: gray !important;
-  }
+.grid-item:hover{
+  transform: scale(1.1);
+  box-shadow: 1px 3px 19px dimgray !important;
+  z-index: 5;
+  /* border: none !important; */
+}
 
-  .link3 {
-    color: black !important;
-  }
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / 5;
+}
+
+.item2 {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 1;
+}
+
+.item3 {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 3;
+}
+
+.item4 {
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 3;
+}
+/* .item5 {
+  grid-column: 3 / span 1;
+  grid-row: 4/span 2;
+} */
 </style>
-<div class="container p-2">
-  <div class="jumbotron mx-2 days-img-con"></div>
-  <div class="jumbotron p-0 bg-transparent">
+<div class="container-fluid p-5">
 
-    <table class="table mb-0 table-bordered table-hover table-striped">
-      <thead class="thead-dark">
-        <tr>
-          
-          <th scope="col">
-            <p class="m-0">Days</p>
-          </th>
-          <th scope="col">
-            <p class="m-0">Activities</p>
-          </th>
-          <th scope="col">
-            <p class="m-0">Time</p>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <p>Tuesdays</p>
-          </td>
-          <td>
-            <p>Pre-service counselling,Prayer Day</p>
-          </td>
-          <td>
-            <p>8am - 4pm</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>Wednesdays</p>
-          </td>
-          <td>
-            <p>Counselling continued</p>
-          </td>
-          <td>
-            <p>8am - 5pm</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>3rd Fridays</p>
-          </td>
-          <td>
-            <p>Power Night</p>
-          </td>
-          <td>
-            <p>10pm - 6am</p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <div class="grid-container">
+    {% load staticfiles %}
+  <div class="shadow-lg border p-2 grid-item item1">
+    <img class="img-fluid mx-0" src="{% static 'imgs/TB-Joshua-2.jpg' %}" style="width: 100%; height:95%;"><h6 class="m-2 p-0 text-left">Snr. Prophet TB Joshua,<br><span class="text-muted">General Overseer</span></h6></div>
+  <div class="shadow-lg border p-2 grid-item item2">
+    <img class="img-fluid mx-0" src="{% static 'imgs/TB-Joshua-2.jpg' %}" style="width: 100%; height:90%;"><h6 class="m-2 p-0 text-left">Snr. Prophet TB Joshua,<br><span class="text-muted">General Overseer</span></h6></div>
+  <div class="shadow-lg border p-2 grid-item item3">
+    <img class="img-fluid mx-0" src="{% static 'imgs/TB-Joshua-2.jpg' %}" style="width: 100%; height:90%;"><h6 class="m-2 p-0 text-left">Snr. Prophet TB Joshua,<br><span class="text-muted">General Overseer</span></h6></div>
+  <div class="shadow-lg border p-2 grid-item item4">
+    <img class="img-fluid mx-0" src="{% static 'imgs/TB-Joshua-2.jpg' %}" style="width: 100%; height:90%;"><h6 class="m-2 p-0 text-left">Snr. Prophet TB Joshua,<br><span class="text-muted">General Overseer</span></h6></div>
+  <div class="shadow-lg border p-2 grid-item item5">
+    <img class="img-fluid mx-0" src="{% static 'imgs/TB-Joshua-2.jpg' %}" style="width: 100%; height:90%;"><h6 class="m-2 p-0 text-left">Snr. Prophet TB Joshua,<br><span class="text-muted">General Overseer</span></h6></div>
+  <div class="shadow-lg border p-2 grid-item item6">
+    <img class="img-fluid mx-0" src="{% static 'imgs/TB-Joshua-2.jpg' %}" style="width: 100%; height:90%;"><h6 class="m-2 p-0 text-left">Snr. Prophet TB Joshua,<br><span class="text-muted">General Overseer</span></h6></div>
+  <div class="shadow-lg border p-2 grid-item item7">
+    <img class="img-fluid mx-0" src="{% static 'imgs/TB-Joshua-2.jpg' %}" style="width: 100%; height:90%;"><h6 class="m-2 p-0 text-left">Snr. Prophet TB Joshua,<br><span class="text-muted">General Overseer</span></h6></div>
+  <div class="shadow-lg border p-2 grid-item item8">
+    <img class="img-fluid mx-0" src="{% static 'imgs/TB-Joshua-2.jpg' %}" style="width: 100%; height:90%;"><h6 class="m-2 p-0 text-left">Snr. Prophet TB Joshua,<br><span class="text-muted">General Overseer</span></h6></div>
 </div>
-<main class="container">
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa suscipit beatae nobis unde recusandae, vero
-    dignissimos. Facere modi recusandae sit fugiat quos autem, accusamus, vel facilis qui perferendis harum distinctio
-    saepe repellendus dignissimos omnis laudantium asperiores blanditiis explicabo incidunt nemo rem dolor. Dolore
-    voluptatum cupiditate sit ut libero esse, quibusdam voluptate facilis saepe cum eligendi, atque corporis dolorem
-    assumenda unde quis deserunt maiores et quaerat quidem odio. Eum, ad possimus. Architecto sit nemo animi ullam ipsum
-    distinctio et! Voluptatum sit molestias repellat, commodi distinctio sint eius, expedita mollitia quasi, iste unde
-    aut necessitatibus cumque. Laudantium adipisci eligendi itaque animi tempore?</p>
-</main>
+</div>
 {% endblock %}
