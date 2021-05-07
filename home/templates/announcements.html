@@ -27,30 +27,19 @@
 </main>
 <div class="container">
   <div class="jumbotron p-2 bg-transparent d-flex flex-column justify-content-center align-items-start">
-    <div class="jumbotron bg-transparent border p-1">
-      <div class="jumbotron bg-transparent p-3 rounded-0 m-0">
-        <h3 class="font-weight-normal">Lorem ipsum dolor sit amet.</h3>
-        <h6>Cc: General</h6>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, distinctio facere? Labore autem esse
-          provident perferendis at nam id numquam qui corrupti, porro sed quis! Voluptate adipisci ad laboriosam
-          reiciendis.</p>
+    
+    {% for result in results %}
+      <div class="jumbotron col-lg-12 bg-transparent border p-1">
+        <div class="jumbotron bg-transparent p-3 rounded-0 m-0">
+          <h3 class="font-weight-normal">{{result.Title}}</h3>
+          <h6>Cc: {{result.Cc}}</h6>
+          <p>{{result.Detail}}</p>
+        </div>
+        <div class="jumbotron border d-flex justify-content-start m-0 p-1 rounded-0 bg-light">
+          <div class="jumbotron bg-transparent p-1 m-0 mx-2"><span>{{result.Date}}</span></div>
+        </div>
       </div>
-      <div class="jumbotron border d-flex justify-content-start m-0 p-1 rounded-0 bg-light">
-        <div class="jumbotron bg-transparent p-1 m-0 mx-2"><span>21 July, 2021</span></div>
-      </div>
-    </div>
-    <div class="jumbotron bg-transparent border p-1">
-      <div class="jumbotron bg-transparent p-3 rounded-0 m-0">
-        <h3 class="font-weight-normal">Lorem ipsum dolor sit amet.</h3>
-        <h6>Cc: General</h6>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, distinctio facere? Labore autem esse
-          provident perferendis at nam id numquam qui corrupti, porro sed quis! Voluptate adipisci ad laboriosam
-          reiciendis.</p>
-      </div>
-      <div class="jumbotron border d-flex justify-content-start m-0 p-1 rounded-0 bg-light">
-        <div class="jumbotron bg-transparent p-1 m-0 mx-2"><span>21 July, 2021</span></div>
-      </div>
-    </div>
+    {% endfor%}
   </div>
 
 </div>
