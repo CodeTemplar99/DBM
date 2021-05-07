@@ -1,12 +1,15 @@
 from django.db import models
+from django.urls import reverse
 from django.utils import timezone
+# Create your models here.
 
 
-class Announcements(models.Model):
+class Announcement(models.Model):
     id = models.AutoField(primary_key=True)
-    cc = models.CharField(blank=False, null=False, max_length=120)
-    announcements = models.TextField(max_length=200, blank=False, null=False)
-    date_created = models.DateTimeField(default=timezone.now)
+    Title = models.CharField(blank=True, null=True, max_length=120)
+    Cc = models.CharField(blank=False, null=True, max_length=120)
+    Details = models.CharField(blank=False, null=True, max_length=120)
+    Date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return self.Announcements
+        return self.Title
