@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+  .announcements-img-con {
+    height: 10px !important;
+  }
+
+  .about-head {
+    font-size: 150%;
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+
+  .nav-link {
+    color: gray !important;
+  }
+
+  .link8 {
+    color: black !important;
+  }
+</style>
+<main class="container">
+  <div class="jumbotron mx-2 announcements-img-con"></div>
+  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa suscipit beatae nobis unde recusandae, vero
+    dignissimos. Facere modi recusandae sit fugiat quos autem, accusamus, vel facilis qui perferendis harum distinctio</p> -->
+</main>
+<div class="container">
+  <div class="jumbotron p-2 bg-transparent d-flex flex-column justify-content-center align-items-start">
+    
+    {% for result in results %}
+      <div class="jumbotron col-lg-12 bg-transparent border p-1">
+        <div class="jumbotron bg-transparent p-3 rounded-0 m-0">
+          <h3 class="font-weight-normal">{{result.Title}}</h3>
+          <h6>Cc: {{result.Cc}}</h6>
+          <p>{{result.Details}}</p>
+        </div>
+        <div class="jumbotron border d-flex justify-content-start m-0 p-1 rounded-0 bg-light">
+          <div class="jumbotron bg-transparent p-1 m-0 mx-2"><span>{{result.Date}}</span></div>
+        </div>
+      </div>
+    {% endfor%}
+  </div>
+
+</div>
+{% endblock %}
