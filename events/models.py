@@ -5,10 +5,10 @@ from django.urls import reverse
 
 class Event(models.Model):
     id = models.AutoField(primary_key=True)
-    Event = models.CharField(blank=True, null=True, max_length=120)
+    Event = models.CharField(blank=True, null=True, max_length=100)
     Date = models.DateTimeField()
     Details = models.TextField(
-        max_length=200, blank=True, null=True)
+        max_length=500, blank=True, null=True)
 
     def __str__(self):
         return self.Event
