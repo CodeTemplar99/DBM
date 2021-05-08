@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'days.apps.DaysConfig',
     'contact.apps.ContactConfig',
     'announcements.apps.AnnouncementsConfig',
-    'events.apps.EventsConfig'
+    'events.apps.EventsConfig',
     'testimonies.apps.TestimoniesConfig'
 ]
 
