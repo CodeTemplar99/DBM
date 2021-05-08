@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'contact.apps.ContactConfig',
     'announcements.apps.AnnouncementsConfig',
     'events.apps.EventsConfig'
+    'testimonies.apps.TestimoniesConfig'
 ]
 
 MIDDLEWARE = [
