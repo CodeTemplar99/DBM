@@ -5,6 +5,6 @@ from .models import Testimonies
 
 
 def testimonies(request):
-    results = Testimonies.objects.all()
-    context = {'results': results, }
+    testimonies = Testimonies.objects.all()
+    context = {'testimonies': testimonies, }
     return render(request, 'testimonies.html', context)
