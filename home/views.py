@@ -23,3 +23,7 @@ def contact(request):
 
 def announcements(request):
     return render(request, 'announcements.html')
+
+
+def products(request):
+    return render(request, 'products.html')

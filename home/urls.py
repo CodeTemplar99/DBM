@@ -9,6 +9,7 @@ urlpatterns = [
     path('days', views.days, name='days'),
     path('contact', views.contact, name='contact'),
     path('announcements', views.announcements, name='announcements'),
+    path('products', views.products, name='products'),
     # path('event', EventListView.as_view(), name='event-list'),
     # path('<pk>/', EventDetailView.as_view(), name='event-detail'),
 ]
