@@ -32,4 +32,5 @@ urlpatterns = [
     path('ministers/', include('ministers.urls')),
     path('products/', include('home.urls')),
     path('testimonies/', include('testimonies.urls')),
+    path('gallery/', include('home.urls'))
 ]

@@ -1,127 +1,105 @@
-<div class="container">
- 	
-	<div id="level1" class="row">
-
-		<div class="col1">
-			
-			<div class="gallery">
-				
-				<div class="gallery_item">
-					<img src="https://images.unsplash.com/photo-1585919751768-dff94a989751?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" />
-				</div>
-				
-				<div class="gallery_item">
-					
-					<h1>Parallax Gallery Scroll</h1>
-  					<p>by PunKrazio</p>
-					
-				</div>
-				
-				<div class="gallery_item">
-					<img src="https://images.unsplash.com/photo-1509018877337-3af7dd307ea9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
-				</div>
-				
-				<div class="gallery_item">
-					<img src="https://images.unsplash.com/photo-1482996207824-b0f01de61751?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80" />
-				</div>
-				
-				<div class="gallery_item">
-					<img src="https://images.unsplash.com/photo-1586084475151-e2f744d2836d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" />
-				</div>
-				
-			</div>
-			
-		</div>
-
-	</div>
-	
-	<div id="level2" class="row">
-
-		<div class="col2">
-			
-			<div class="gallery">
-				
-				<div class="gallery_item">
-					<img src="https://images.unsplash.com/photo-1586089767946-73887b2eb438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
-				</div>
-				
-				<div class="gallery_item">
-					<img src="https://images.unsplash.com/photo-1534841070059-fac69c75d466?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" />
-				</div>
-				
-				<div class="gallery_item">
-					<img src="https://images.unsplash.com/photo-1586178132225-99f5d5277f1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" />
-				</div>
-				
-				<div class="gallery_item">
-					<img src="https://images.unsplash.com/photo-1543867702-3881e7432e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" />
-				</div>
-				
-			</div>
-			
-		</div>
-
-	</div>
-	
-	<div id="level3" class="row">
+{% extends 'base.html' %}
+{% block content %}
+  <div class="container">
     
-    	<div class="col3">
-			
-			<div class="gallery">
-				
-				<div class="gallery_item">
-					<img src="https://images.unsplash.com/photo-1511788599147-a78f4f6145de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" />
-				</div>
-				
-				<div class="gallery_item">
-					<img src="https://images.unsplash.com/photo-1540284921398-e06aee87b0f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=748&q=80" />
-				</div>
-				
-				<div class="gallery_item">
-					<img src="https://images.unsplash.com/photo-1537634368701-eb5b82a4711f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
-				</div>
-				
-				<div class="gallery_item">
-					<img src="https://images.unsplash.com/photo-1551048950-35fd9d7524f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" />
-				</div>
-				
-			</div>
-			
-		</div>
-    
-  	</div>
-  
-</div>
+    <div id="level1" class="row">
 
-<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-
-
-  <!-- 
-
-
-    <div class="container">
-        <div class= "header">
-            <h1>404 Page Wallpaper Gallery</h1>
-            <div class= "options">
-                <ol>
-                    <li>Auto sliding images</li>
-                    <li>Thumbnail Click to main View</li>
-                    <li>Full screen mode sliding</li>
-                </ol>
-            </div>
-        </div>
+      <div class="col1">
+        
         <div class="gallery">
-            <div class="main-image-section">
-                <img id="main-view" class="main-view" src= "images/1.jpg" onclick= "fullScreenImage();"/>
-                <div class="caption-container">
-                    <div id="caption">This is the caption</div>
-                    <div id="info">This is info message</div>
-                </div>
-            </div>
-            <div id= "thumbnails" class="thumbnails"></div>
+          
+          <div class="gallery_item">
+            <img src="https://images.unsplash.com/photo-1585919751768-dff94a989751?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" />
+          </div>
+          
+          <div class="gallery_item">
+            
+            <h1>Parallax Gallery Scroll</h1>
+              <p>by PunKrazio</p>
+            
+          </div>
+          
+          <div class="gallery_item">
+            <img src="https://images.unsplash.com/photo-1509018877337-3af7dd307ea9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
+          </div>
+          
+          <div class="gallery_item">
+            <img src="https://images.unsplash.com/photo-1482996207824-b0f01de61751?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80" />
+          </div>
+          
+          <div class="gallery_item">
+            <img src="https://images.unsplash.com/photo-1586084475151-e2f744d2836d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" />
+          </div>
+          
         </div>
+        
+      </div>
+
     </div>
-   -->
+    
+    <div id="level2" class="row">
+
+      <div class="col2">
+        
+        <div class="gallery">
+          
+          <div class="gallery_item">
+            <img src="https://images.unsplash.com/photo-1586089767946-73887b2eb438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
+          </div>
+          
+          <div class="gallery_item">
+            <img src="https://images.unsplash.com/photo-1534841070059-fac69c75d466?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" />
+          </div>
+          
+          <div class="gallery_item">
+            <img src="https://images.unsplash.com/photo-1586178132225-99f5d5277f1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" />
+          </div>
+          
+          <div class="gallery_item">
+            <img src="https://images.unsplash.com/photo-1543867702-3881e7432e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" />
+          </div>
+          
+        </div>
+        
+      </div>
+
+    </div>
+    
+    <div id="level3" class="row">
+      
+        <div class="col3">
+        
+        <div class="gallery">
+          
+          <div class="gallery_item">
+            <img src="https://images.unsplash.com/photo-1511788599147-a78f4f6145de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" />
+          </div>
+          
+          <div class="gallery_item">
+            <img src="https://images.unsplash.com/photo-1540284921398-e06aee87b0f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=748&q=80" />
+          </div>
+          
+          <div class="gallery_item">
+            <img src="https://images.unsplash.com/photo-1537634368701-eb5b82a4711f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
+          </div>
+          
+          <div class="gallery_item">
+            <img src="https://images.unsplash.com/photo-1551048950-35fd9d7524f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" />
+          </div>
+          
+        </div>
+        
+      </div>
+      
+      </div>
+    
+  </div>
+
+  {% load static %}
+  {% block scripts %}
+  {% load static %}
+   <script src="{% static 'js/jquery.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/gallery.js' defer %}" type="text/javascript"></script>
+  {% endblock scripts %}
+
+{% endblock %}

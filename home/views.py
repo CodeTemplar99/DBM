@@ -27,3 +27,7 @@ def announcements(request):
 
 def products(request):
     return render(request, 'products.html')
+
+
+def gallery(request):
+    return render(request, 'gallery.html')

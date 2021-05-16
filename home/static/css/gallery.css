@@ -1,0 +1,46 @@
+body {
+  font-family: Open Sans;
+}
+h1 {
+  margin-bottom: 0px;
+}
+.container {
+  display: block;
+  width: 90%;
+  height: 700px;
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
+}
+.row {
+  position: absolute;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.col1 {
+  width: 33%;
+  height: auto;
+}
+.col2 {
+  width: 33%;
+  height: auto;
+  margin-left: calc(33% + 10px);
+}
+.col3 {
+  width: 33%;
+  height: auto;
+  margin-left: calc(66% + 20px);
+}
+.gallery {
+  position: relative;
+  z-index: 4;
+}
+.gallery .gallery_item {
+  padding-bottom: 10px;
+  text-align: left;
+}
+.gallery .gallery_item img {
+  width: 100%;
+  height: auto;
+}
