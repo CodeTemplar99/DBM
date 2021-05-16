@@ -1,10 +1,4 @@
-body {
-  font-family: Open Sans;
-}
-h1 {
-  margin-bottom: 0px;
-}
-.container {
+.con {
   display: block;
   width: 90%;
   height: 700px;
@@ -12,7 +6,7 @@ h1 {
   overflow: hidden;
   position: relative;
 }
-.row {
+.row1 {
   position: absolute;
   width: 100%;
   -webkit-transition: all 0.5s;
