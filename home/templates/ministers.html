@@ -3,77 +3,200 @@
 {% block content %}
 
 <style>
-.grid-container {
-  display: grid;
-  grid-gap: 10px;
-  background-color: transparent;
-  padding: 10px;
-  grid-template-rows: auto;
+.heading-title {
+  margin-bottom: 100px;
 }
-
-.grid-item {
-  background-color: white;
+.text-center {
   text-align: center;
-  padding: 20px;
-  font-size: 30px;
-   cursor: pointer;
-    transition: all 0.9s;
+}
+.heading-title h3 {
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+.p-top-30 {
+  padding-top: 30px;
+}
+.half-txt {
+  width: 60%;
+  margin: 0 auto;
+  display: inline-block;
+  line-height: 25px;
+  color: #7e7e7e;
+}
+.text-uppercase {
+  text-transform: uppercase;
 }
 
-.grid-item:hover{
-  transform: scale(1.1);
-  box-shadow: 3px 7px 19px black !important;
-  z-index: 5;
-  /* border: none !important; */
+.team-member, .team-member .team-img {
+  position: relative;
+}
+.team-member {
+  overflow: hidden;
+}
+.team-member, .team-member .team-img {
+  position: relative;
 }
 
-.item1 {
-  grid-column: 1 / span 2;
-  grid-row: 1 / 5;
+.team-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  border: 20px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.90);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.team-member:hover .team-hover .desk {
+  top: 35%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+  opacity: 1;
+}
+.team-hover .desk {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translateY(-55%);
+  -ms-transform: translateY(-55%);
+  transform: translateY(-55%);
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+  padding: 0 20px;
+}
+.desk, .desk h4, .team-hover .s-link a {
+  text-align: center;
+  color: #222;
+}
+.team-member:hover .team-hover .s-link {
+  bottom: 10%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+  opacity: 1;
+}
+.team-hover .s-link {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  -webkit-transform: translateY(45%);
+  -ms-transform: translateY(45%);
+  transform: translateY(45%);
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+  font-size: 35px;
+}
+.desk, .desk h4, .team-hover .s-link a {
+  text-align: center;
+  color: #222;
+}
+.team-member .s-link a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 16px;
+}
+.team-title {
+  position: static;
+  padding: 20px 0;
+  display: inline-block;
+  letter-spacing: 2px;
+  width: 100%;
+}
+.team-title h5 {
+  margin-bottom: 0px;
+  display: block;
+  text-transform: uppercase;
+}
+.team-title span {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #a5a5a5;
+  letter-spacing: 1px;
 }
 
-.item2 {
-  grid-column: 3 / span 2;
-  grid-row: 1 / span 1;
-}
-
-.item3 {
-  grid-column: 3 / span 1;
-  grid-row: 2 / span 3;
-}
-
-.item4 {
-  grid-column: 4 / span 1;
-  grid-row: 2 / span 3;
-}
-/* .item5 {
-  grid-column: 3 / span 1;
-  grid-row: 4/span 2;
-} */
+  /* team */
 </style>
-<div class="container-fluid p-5">
-  <div class="jumbotron bg-transparent shadow-0 border p-3 rounded-lg">
-    <h4 class="font-weight-normal text-center">Our Ministers and Workers</h4>
-  </div>
+<div class="container">
+  <div class="row">
+    <div class="heading-title mt-4 col-lg-12">
+      <h3 class="text-uppercase text-center">Our Ministers </h3>
+      <p class="p-top-30 mb-0 text-center">Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+    </div>
 
-  <div class="grid-container">
-    {% load staticfiles %}
-  <div class="shadow-lg border p-2 grid-item item1">
-    <img class="img-fluid mx-0" src="{% static 'imgs/TB-Joshua-2.jpg' %}" style="width: 100%; height:92%;"><h6 class="m-2 p-0 text-left">Snr. Prophet TB Joshua,<br><span class="text-muted">General Overseer</span></h6></div>
-  <div class="shadow-lg border p-2 grid-item item2">
-    <img class="img-fluid mx-0" src="{% static 'imgs/TB-Joshua-2.jpg' %}" style="width: 100%; height:88%;"><h6 class="m-2 p-0 text-left">Snr. Prophet TB Joshua,<br><span class="text-muted">General Overseer</span></h6></div>
-  <div class="shadow-lg border p-2 grid-item item3">
-    <img class="img-fluid mx-0" src="{% static 'imgs/TB-Joshua-2.jpg' %}" style="width: 100%; height:80%;"><h6 class="m-2 p-0 text-left">Snr. Prophet TB Joshua,<br><span class="text-muted">General Overseer</span></h6></div>
-  <div class="shadow-lg border p-2 grid-item item4">
-    <img class="img-fluid mx-0" src="{% static 'imgs/TB-Joshua-2.jpg' %}" style="width: 100%; height:80%;"><h6 class="m-2 p-0 text-left">Snr. Prophet TB Joshua,<br><span class="text-muted">General Overseer</span></h6></div>
-  <div class="shadow-lg border p-2 grid-item item5">
-    <img class="img-fluid mx-0" src="{% static 'imgs/TB-Joshua-2.jpg' %}" style="width: 100%; height:80%;"><h6 class="m-2 p-0 text-left">Snr. Prophet TB Joshua,<br><span class="text-muted">General Overseer</span></h6></div>
-  <div class="shadow-lg border p-2 grid-item item6">
-    <img class="img-fluid mx-0" src="{% static 'imgs/TB-Joshua-2.jpg' %}" style="width: 100%; height:80%;"><h6 class="m-2 p-0 text-left">Snr. Prophet TB Joshua,<br><span class="text-muted">General Overseer</span></h6></div>
-  <div class="shadow-lg border p-2 grid-item item7">
-    <img class="img-fluid mx-0" src="{% static 'imgs/TB-Joshua-2.jpg' %}" style="width: 100%; height:80%;"><h6 class="m-2 p-0 text-left">Snr. Prophet TB Joshua,<br><span class="text-muted">General Overseer</span></h6></div>
-  <div class="shadow-lg border p-2 grid-item item8">
-    <img class="img-fluid mx-0" src="{% static 'imgs/TB-Joshua-2.jpg' %}" style="width: 100%; height:80%;"><h6 class="m-2 p-0 text-left">Snr. Prophet TB Joshua,<br><span class="text-muted">General Overseer</span></h6></div>
-</div>
+    <div class="col-md-4 col-sm-4">
+      <div class="team-member">
+        <div class="team-img">
+          {% load static%}
+          <img src="{% static 'imgs/oberenwa.png' %}" alt="team member" class="img-responsive">
+        </div>
+        <div class="team-hover">
+            <div class="desk">
+              <h4>Hi There !</h4>
+              <p>I love to introduce myself as a hardcore Web Designer.</p>
+            </div>
+            <div class="s-link">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </div>
+                </div>
+            </div>
+            <div class="team-title">
+                <h6>Dr. Onyebuchi Sylvanus</h6>
+                <span>founder &amp; General Overseer</span>
+            </div>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <div class="team-member">
+                <div class="team-img">
+                    <img src="{% static 'imgs/oberenwa.png' %}" alt="team member" class="img-responsive">
+                </div>
+                <div class="team-hover">
+                    <div class="desk">
+                        <h4>Hello World</h4>
+                        <p>I love to introduce myself as a hardcore Web Designer.</p>
+                    </div>
+                    <div class="s-link">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-title">
+                <h6>Franklin Harbet</h6>
+                <span>Senior Pastor</span>
+            </div>
+    </div>
+    <div class="col-md-4 col-sm-4">
+            <div class="team-member">
+                <div class="team-img">
+                    <img src="{% static 'imgs/oberenwa.png' %}" alt="team member" class="img-responsive">
+                </div>
+                <div class="team-hover">
+                    <div class="desk">
+                        <h4>I love to design</h4>
+                        <p>I love to introduce myself as a hardcore Web Designer.</p>
+                    </div>
+                    <div class="s-link">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-title">
+                <h6>Linda Anderson</h6>
+                <span>pastor</span>
+            </div>
+    </div>
+  </div>
+  <!-- team -->
 </div>
 {% endblock %}
